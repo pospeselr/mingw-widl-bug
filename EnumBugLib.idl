@@ -1,7 +1,6 @@
 import "objidl.idl";
 
 import "IMixer.idl";
-import "IPainter.idl";
 
 [
     uuid(25ac00c6-7ddd-43d3-ac53-163b6f0a22c1),
@@ -10,7 +9,6 @@ import "IPainter.idl";
 library TestLib
 {
     interface IMixer;
-    interface IPainter;
 
     enum Color;
 }
