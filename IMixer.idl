@@ -1,0 +1,20 @@
+import "Colors.idl";
+
+[
+  odl,
+  uuid(a46a7854-ce21-4fec-9cfa-8f259eafaa0c)
+]
+interface IMixer
+{
+    void mix(
+        [in] enum Color color1,
+        [in] enum Color color2,
+        [out,retval] enum Color* mixed);
+
+    void super_mix(
+        [in] enum Color color1,
+        [in] enum Color color2,
+        [in] enum Color color3,
+        [out,retval] enum Color* mixed);
+
+};
