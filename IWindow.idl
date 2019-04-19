@@ -9,5 +9,5 @@ import "oleacc.idl";
 interface IWindow
 {
     HRESULT windowHandle(
-    	[out, retval] HWND *handle);
+        [out, retval] WH *handle);
 }

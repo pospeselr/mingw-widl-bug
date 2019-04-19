@@ -1,29 +1,13 @@
-typedef struct _MozRemotableHandle
+typedef struct _FooWindowHandle
 {
-  long fContext;
-  long hRemote;
-} MozRemotableHandle;
+  long data1;
+  long data2;
+} FooWindowHandle;
 
-typedef [unique] MozRemotableHandle * mozHWND;
-typedef [unique] MozRemotableHandle * mozHMENU;
-typedef [unique] MozRemotableHandle * mozHACCEL;
-typedef [unique] MozRemotableHandle * mozHBRUSH;
-typedef [unique] MozRemotableHandle * mozHFONT;
-typedef [unique] MozRemotableHandle * mozHDC;
-typedef [unique] MozRemotableHandle * mozHICON;
-typedef [unique] MozRemotableHandle * mozHRGN;
-typedef [unique] MozRemotableHandle * mozHMONITOR;
+typedef [unique] FooWindowHandle * fooWH;
 
 cpp_quote("#if 0")
-typedef [wire_marshal(mozHWND)] void* HWND;
-typedef [wire_marshal(mozHMENU)] void* HMENU;
-typedef [wire_marshal(mozHACCEL)] void* HACCEL;
-typedef [wire_marshal(mozHBRUSH)] void* HBRUSH;
-typedef [wire_marshal(mozHFONT)] void* HFONT;
-typedef [wire_marshal(mozHDC)] void* HDC;
-typedef [wire_marshal(mozHICON)] void* HICON;
-typedef [wire_marshal(mozHRGN)] void* HRGN;
-typedef [wire_marshal(mozHMONITOR)] void* HMONITOR;
+typedef [wire_marshal(fooWH)] void* WH;
 cpp_quote("#endif // 0")
 
 import "IWindow.idl";
