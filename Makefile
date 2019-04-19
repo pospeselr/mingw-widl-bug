@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := test
 MIDL = "/home/pospeselr/Code/Tor/bin/mingw-w64/bin/i686-w64-mingw32-widl"
-MIDL_FLAGS = "--win32 -m32 -t -D _MIDL_DECLARE_WIREM_HANDLE"
+MIDL_FLAGS = "--win32 -m32 -t"
 test:
 
 	$(MIDL) WireMarshalBug.idl
