@@ -1,9 +1,9 @@
 .DEFAULT_GOAL := test
-MIDL = "/media/ssd/Code/Tor/mingw-w64/bin/i686-w64-mingw32-widl"
-MIDL_FLAGS = "--win32 -m32 -t"
+MIDL = "/home/pospeselr/Code/Tor/bin/mingw-w64/bin/i686-w64-mingw32-widl"
+MIDL_FLAGS = "--win32 -m32 -t -D _MIDL_DECLARE_WIREM_HANDLE"
 test:
 
-	$(MIDL) EnumBugLib.idl
+	$(MIDL) WireMarshalBug.idl
 
 clean:
-	rm -f *.c *.h *.rgs *.tlb *.h.*
+	rm -f WireMarshalBug.h WireMarshalBug_i.c WireMarshalBug.tlb
