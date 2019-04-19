@@ -1,0 +1,10 @@
+import "IFlagGetter.idl";
+
+[
+    uuid(9b07bdb5-c10f-4c04-939e-90988d3f0324),
+    hidden
+]
+library TestLib
+{
+    interface IFlagGetter;
+}
