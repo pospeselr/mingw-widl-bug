@@ -1,0 +1,10 @@
+import "IFoo.idl";
+
+[
+    uuid(97a549e5-5bad-494a-a82f-4dd13cf8e79c),
+    hidden
+]
+library TestLib
+{
+    interface IFoo;
+}

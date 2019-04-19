@@ -1,0 +1,12 @@
+typedef struct {
+    long data;
+} Bar;
+
+[
+    odl,
+    uuid(a5aad6f9-46d4-4401-b19f-5f000ce933b1)
+]
+interface IFoo
+{
+    void doBaz([in] Bar* b);
+}

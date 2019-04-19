@@ -1,9 +1,0 @@
-[
-    odl,
-    uuid(1673eb38-3d87-4b2e-89be-7a546eb33b33)
-]
-interface IFlagGetter
-{
-    void getFlag(
-        [out] boolean* flag);
-}
