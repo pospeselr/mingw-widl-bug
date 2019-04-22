@@ -1,9 +1,9 @@
 .DEFAULT_GOAL := test
-MIDL = "/home/pospeselr/Code/Tor/bin/mingw-w64-widl4.5/bin/i686-w64-mingw32-widl"
-MIDL_FLAGS = --win32 -m32 -t -o BooleanBug.tlb
+MIDL = /media/pospeselr/ssd/Code/Tor/bin/mingw-w64/bin/widl-dev
+MIDL_FLAGS = --win32 -m32 -t -I /media/pospeselr/ssd/Code/Tor/bin/mingw-w64/i686-w64-mingw32/include
 test:
 
-	$(MIDL) $(MIDL_FLAGS) BooleanBug.idl
+	$(MIDL) $(MIDL_FLAGS) BooleanBug.idl -o BooleanBug.widl.tlb
 
 clean:
-	rm -f BooleanBug.tlb
+	rm -f BooleanBug.widl.tlb
